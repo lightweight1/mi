@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Recuerdos 💞</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+    body {
+      margin: 0;
+      background-image: url(istockphoto-2181920325-640x640.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      padding-bottom: 60px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8em;
+      color: whitesmoke;
+      margin: 40px 0 30px;
+      text-shadow: 0 0 10px #ff80ab, 0 0 20px #ff80ab;
+      animation: brillo 2s infinite alternate;
+    }
+
+    @keyframes brillo {
+      from { text-shadow: 0 0 10px #ff80ab, 0 0 20px #ff80ab; }
+      to { text-shadow: 0 0 20px #ff80ab, 0 0 40px #ff80ab; }
+    }
+
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 10px;
+    }
+
+    .bloque {
+      display: flex;
+      gap: 20px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      padding: 20px;
+      align-items: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      transform: translateY(50px);
+      opacity: 0;
+      animation: aparecer 0.8s forwards;
+    }
+
+    .bloque:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+    }
+
+    /* Animación de entrada */
+    @keyframes aparecer {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Delay para animar bloques uno por uno */
+    .bloque:nth-child(1) { animation-delay: 0.2s; }
+    .bloque:nth-child(2) { animation-delay: 0.4s; }
+    .bloque:nth-child(3) { animation-delay: 0.6s; }
+    .bloque:nth-child(4) { animation-delay: 0.8s; }
+    .bloque:nth-child(5) { animation-delay: 1s; }
+
+    .bloque img {
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .info h3 {
+      margin-top: 0;
+      color: #e91e63;
+      font-size: 1.5em;
+    }
+
+    .info p {
+      margin: 10px 0;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    /* Responsive para móviles */
+    @media (max-width: 750px) {
+      .bloque {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .bloque img {
+        width: 90%;
+      }
+    }
+
+    footer {
+      text-align: center;
+      background-color: #e91e63;
+      color: white;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Somos esos </h1>
+
+  <div class="contenedor">
+    <!-- Bloque 1 -->
+    <div class="bloque">
+      <img src="compromiso.jpeg" alt="Foto 1">
+      <div class="info">
+        <h3>Nuestro dia de compromiso</h3>
+        <p>Nuestro día de espositos, espositos de colegio mi amol jeje</p>
+        <audio  controls >
+         <source src="compromiso.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <!-- Bloque 2 -->
+    <div class="bloque">
+      <img src="promocion.jpeg" alt="Foto 2">
+      <div class="info">
+        <h3>Mi promoción</h3>
+        <p>La primera vez que te vi en persona con un vestido increíble, y al lado de mi familia</p>
+        <audio controls>
+          <source src="Promocion.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <!-- Bloque 3 -->
+    <div class="bloque">
+      <img src="cumple de mi gabriella.jpeg" alt="Foto 3">
+      <div class="info">
+        <h3>Tu cumpleaños bebita</h3>
+        <p>El cumpleaños de mi amor, un día increíble de verdad corazón.</p>
+        <audio controls>
+          <source src="tu cumplee.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <!-- Bloque 4 -->
+    <div class="bloque">
+      <img src="halloween.jpeg" alt="Foto 4">
+      <div class="info">
+        <h3>Halloween juntitos</h3>
+        <p>Un día raro halloween? pero a la vez uno de mis días favoritos también mi amor jeje</p>
+        <audio controls>
+          <source src="halloween mi amor.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <!-- Bloque 5 -->
+    <div class="bloque">
+      <img src="micuadrofav.jpeg" alt="Foto 5">
+      <div class="info">
+        <h3>Mi cuadro favorito</h3>
+        <p>El cuadro que siempre veo todos mis días, a todas horas, nuestro amor en un cuadro.</p>
+        <audio controls>
+          <source src="mi cuadro fav.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Somos eshos mi amol
+  </footer>
+</body>
+</html>
+

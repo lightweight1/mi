@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestras Metas 💖</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+    body {
+      margin: 0;
+       background-image: url(istockphoto-2181920325-640x640.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 60px;
+    }
+
+    /* 💫 Título */
+    h1 {
+      margin: 40px 0 30px;
+      font-size: 3em;
+      color: whitesmoke;
+      font-family: 'Great Vibes', cursive;
+      text-shadow: 0 0 10px thistle, 0 0 25px thistle;
+      animation: brillo 2s infinite alternate;
+    }
+
+    @keyframes brillo {
+      from { text-shadow: 0 0 10px thistle, 0 0 25px thistle; }
+      to { text-shadow: 0 0 25px thistle, 0 0 50px thistle; }
+    }
+
+    /* 🌸 Contenedor de metas */
+    .metas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      width: 90%;
+      margin-bottom: 50px;
+    }
+
+    /* 💖 Tarjeta de meta */
+    .meta {
+      background: white;
+      border-radius: 20px;
+      padding: 35px 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: all 0.4s ease;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transform: translateY(30px);
+      opacity: 0;
+      animation: aparecer 1s forwards;
+    }
+
+    /* Animación de entrada */
+    @keyframes aparecer {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* ✨ Efecto de brillo interno */
+    .meta::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at top left, #ffb6c133, transparent 70%);
+      transform: rotate(25deg);
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+
+    .meta:hover::before {
+      opacity: 1;
+    }
+
+    .meta:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .meta h2 {
+      color: #e91e63;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      font-family: 'Great Vibes', cursive;
+    }
+
+    .meta p {
+      font-size: 1.1em;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #e91e63;
+      color: white;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Nuestras Metas mi amol </h1>
+
+  <div class="metas">
+    <div class="meta">
+      <h2>Salir a donde queramos</h2>
+      <p>Quisiera que, más pronto de lo que creemos, podamos tener la posibilidad de estar en cualquier lugar que deseemos.
+Que si uno dice: “pucha, tengo que ir a este lugar”, el otro simplemente responda: “vamos”.
+Que no existan limitaciones ,ni económicas, ni de tiempo, ni de permisos, y que podamos ir a cualquier sitio que soñemos, donde el corazón nos lleve.
+Ojalá que eso sea posible algún día, o incluso mucho antes de lo que imaginamos, porque realmente quiero hacerlo todo contigo, mi amor.
+Las ganas están, siempre han estado. Solo falta poder hacerlo ambos, y sé que ese momento llegará.</p>
+    </div>
+
+    <div class="meta">
+      <h2>Crecer juntos</h2>
+      <p>Siento que, de alguna forma, somos muy jóvenes, pero a la vez muy maduros en muchos aspectos. Ambos tenemos 17 años, y todavía nos queda un largo camino por recorrer en la vida.
+Pero quiero que ese camino no sea solo de cada uno por separado, sino también de los dos.
+Quiero que crezcamos juntos en esta relación, que maduremos de la mano y que, con el tiempo, veamos cómo cada día nos volvemos mejores personas.
+Que podamos evolucionar para bien, construir una relación sana, bonita, en la que ambos nos sintamos cómodos, felices, y donde nunca falte la química ni se pierda esa esencia, esa dinámica tan especial que nos une.
+Quiero crecer a tu lado, mi amor. Quiero madurar contigo, verte lograr todo lo que te propongas y estar ahí, acompañándote en cada paso.
+Porque más allá del tiempo o la edad, lo que realmente importa es todo lo que somos cuando estamos juntos.</p>
+    </div>
+
+    <div class="meta">
+      <h2>Casarnos</h2>
+      <p>Casarnos, amor… ese es mi más grande sueño, mi más grande anhelo contigo.
+Quiero verte en el altar, con ese vestido blanco que imagino tantas veces.
+Como dice la canción: “Siempre seré tuyo, del altar a la tumba”.
+
+Ese día, cuando te vea frente a mí, será el más hermoso de todos, mi amor.
+Y aunque ahora seamos “espositos”, como decimos de cariño, sé que nuestro compromiso es real, sincero, y que más adelante se volverá aún más fuerte, cuando llegue el momento de verdad.
+
+Cuando seamos adultos, cuando el tiempo y la vida nos digan que es el instante perfecto, iré a pedir tu mano, como debe ser: hablaré con tus padres, con los míos, y haré que todo sea especial, como tú te lo mereces.
+
+Porque el día de nuestra boda será el más perfecto de tu mundo, te lo prometo.
+Si crees que ya has tenido días felices, ese día será tu día más mega, ultra, archi favorito.
+Haré que sea inolvidable, mi amor, porque quiero darte lo mejor de mí.
+
+Te lo juro: del altar a la tumba, siempre seré tuyo.
+Y siempre me encargaré de darte lo mejor, porque tú eres lo mejor que me ha pasado, lo mejor que me pasará por siempre.
+
+Me quiero casar contigo, si pudiera, mañana mismo.
+Porque estoy feliz, porque estoy comprometido contigo de corazón, porque eres mi todo, mi Gabriella.</p>
+    </div>
+
+    <div class="meta">
+      <h2>Tener una familia</h2>
+      <p>Tú sabes lo mucho que espero que tú y yo tengamos una familia. Una familia y más allá una familia, un hogar, un lugar en donde podamos compartir, en donde cada momento sea muy íntimo y tal vez seamos tres o cuatro, incluso dos. Creo que con dos basta para formar una familia, con convivir juntos y luego tener a un hijito, a nuestro Santiago. Y si no se dice a mujer, igual tendríamos a nuestra hijita, tal vez Violeta, piensa-piensa, guiño, guiño. Pero eso, quisiera pues poder formar una familia contigo, en serio. Es lo que más deseo con todo mi corazón. Y es que en realidad, eres la mujer que yo he decidido formar una vida a mi lado. Eres perfecta para mí, para mí y para nadie más, y yo soy perfecto para ti y para nadie más, mi amor. Te amo, te amo con todo mi corazón y quiero que sepas que amo y me encantaría y amaría tener una familia, una vida entera con mis hijos, con mi esposa, y seas tú toda mi vida y que seas tú el significado de lo que es familia. Mi Gabriela hermosa.</p>
+    </div>
+
+    <div class="meta">
+      <h2>Tener más tiempo</h2>
+      <p>Una de las cosas que más deseo en este momento es que podamos tener más tiempo para nosotros.
+Sé que este año no será sencillo, y que quizás no tengamos todo el tiempo que quisiéramos, pero mi corazón sueña con esos momentos compartidos.
+Si pudiera, saldría contigo todos los días a caminar. De verdad lo haría, porque caminar contigo es una de las cosas que más disfruto en el mundo. Me río, hablamos de todo, nos entendemos, nos peleamos un poquito, nos reconciliamos, y sobre todo, nos amamos.
+
+Quisiera tener más días así, más tardes juntos, más disponibilidad para perdernos en nuestras conversaciones, sin mirar el reloj, sin pensar en el final del día. No solo una hora o unos minutos para acompañarte, sino tiempo verdadero, de esos que se sienten eternos.
+
+Esa es una de mis metas, amor: que llegue ese momento en que el tiempo nos sobre, o al menos, que el poco que tengamos, lo vivamos intensamente.
+Sé que con paciencia y amor, lo lograremos.
+Te amo demasiado, mi vida.
+Ojalá el tiempo fuera inexorable cuando estoy contigo.</p>
+    </div>
+
+    <div class="meta">
+      <h2>Ser diferentes</h2>
+      <p>Quiero que lo nuestro sea diferente, amor.
+Que un día nos miren y digan: “no hay nadie como ellos, no hay nada que se les parezca.”
+Que seamos tan únicos, tan inentendibles para el resto,
+que solo tú y yo podamos comprender este universo que construimos.
+Porque ser distintos es hermoso.
+Mientras más raros somos, más grandioso se vuelve todo,
+y si hoy ya somos diferentes, quiero que mañana lo seamos aún más.
+Quiero que hagamos cosas que nadie haya hecho,
+que digamos palabras que nadie haya dicho,
+que sintamos de una manera que nadie haya sentido,
+que vivamos algo que nadie haya vivido.
+Quiero que seamos únicos, irrepetibles,
+por el resto de nuestra relación,
+por el resto de nuestras vidas,
+por siempre, mi amor.</p>
+    </div>
+  </div>
+
+  <footer>
+     Hecho con amor por tu chocolatito muejeje
+  </footer>
+</body>
+</html>

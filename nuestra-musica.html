@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Videos Musicales 🎵</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+    body {
+       background-image: url(istockphoto-2181920325-640x640.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 30px 10px 80px;
+      color: #333;
+    }
+
+    /* ✨ Título con brillo */
+    h1 {
+      text-align: center;
+      color: white;
+      margin-bottom: 40px;
+      font-size: 2.8em;
+      text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+      animation: brillo 2.5s infinite alternate;
+      font-family: 'Great Vibes', cursive;
+      letter-spacing: 2px;
+    }
+
+    @keyframes brillo {
+      0% {
+        text-shadow: 0 0 5px white, 0 0 10px white;
+      }
+      100% {
+        text-shadow: 0 0 20px white, 0 0 40px white, 0 0 60px white;
+      }
+    }
+
+    /* 🎬 Estilo para los videos */
+    .video {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    iframe {
+      width: 90%;
+      max-width: 800px;
+      height: 450px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      text-align: center;
+      color: white;
+      background-color: #e91e63;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 0.9em;
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Nuestra música mi amor</h1>
+
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/RdAhX4hkcjA&?list=RD-5wm_we5Blk&index=5" allowfullscreen></iframe>
+  </div>
+
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/-5wm_we5Blk&?list=RD-5wm_we5Blk&start_radio=1" allowfullscreen></iframe>
+  </div>
+
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/UPH5vpjN2Io" allowfullscreen></iframe>
+  </div>
+
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/TmGed10SAA0" allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    💗 Hecho con amor por mí jejee, ti amuuu 💗
+  </footer>
+</body>
+</html>

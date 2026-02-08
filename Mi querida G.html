@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Gabriella</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 30px;
+       background-image: url(istockphoto-2181920325-640x640.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #ff80ab;
+      border-right: 3px solid #ff80ab;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      text-align: center;
+      animation: 
+        escribir 4s steps(40) 1s forwards,   /* ✍️ Efecto de escritura */
+        parpadeo 0.7s infinite step-end alternate, /* Cursor que parpadea */
+        brillo 2s infinite alternate,        /* ✨ Brillo suave */
+        flotar 3s ease-in-out infinite;      /* 🌬️ Movimiento flotante */
+      text-shadow: 0 0 5px #ff80ab, 0 0 10px #ff80ab;
+    }
+
+    /* ✍️ Efecto de escritura */
+    @keyframes escribir {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    /* 🔦 Cursor que parpadea */
+    @keyframes parpadeo {
+      50% { border-color: transparent }
+    }
+
+    /* ✨ Brillo animado */
+    @keyframes brillo {
+      0% { text-shadow: 0 0 5px #ff80ab, 0 0 10px #ff80ab; }
+      100% { text-shadow: 0 0 20px #ff80ab, 0 0 40px #ff80ab; }
+    }
+
+    /* 🌬️ Movimiento flotante */
+    @keyframes flotar {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Contenedor general */
+    .galeria {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* Cada bloque de imagen + texto */
+    .bloque {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background-color: black;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+      /* Animación inicial */
+      opacity: 0;
+      transform: translateY(40px);
+      animation: aparecer 1s ease forwards;
+    }
+
+    /* Añadimos un pequeño retraso en cascada */
+    .bloque:nth-child(1) { animation-delay: 0.1s; }
+    .bloque:nth-child(2) { animation-delay: 0.3s; }
+    .bloque:nth-child(3) { animation-delay: 0.5s; }
+    .bloque:nth-child(4) { animation-delay: 0.7s; }
+    .bloque:nth-child(5) { animation-delay: 0.9s; }
+
+    /* Definición de la animación */
+    @keyframes aparecer {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Alternar lados: algunas imágenes a la derecha */
+    .bloque:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .bloque img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .descripcion {
+      flex: 1;
+    }
+
+    .descripcion h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .descripcion p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* Responsivo */
+    @media (max-width: 700px) {
+      .bloque {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .bloque:nth-child(even) {
+        flex-direction: column;
+      }
+
+      .bloque img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Mi Gabriella</h1>
+
+  <div class="galeria">
+    <div class="bloque">
+      <img src="ella.jpeg" alt="Imagen 1">
+      <div class="descripcion">
+        <h2>:3</h2>
+        <p>  Esta foto yo se la pedí, jeje, quería que hiciera corazoncitos con su cabello para ponerlo de foondo en mi celular
+        es de mis fotos favoritas de ella, me encanta enserio, es tan rara la imagen, me encantan sus ojos al verlo, su cabello,
+        su mirada, todo, la amo. 
+        Amo tanto a mi mujer y su rostro, y cada detalle de ella es hermoso, me fascina mucho esta chica cachetona muejeje.</p>
+      </div>
+    </div>
+
+    <div class="bloque">
+      <img src="con mi hijo.jpeg" alt="Imagen 2">
+      <div class="descripcion">
+        <h2>Mi futura familia je </h2>
+        <p>Cada vez que veo esta imagen, recuerdo lo mucho que deseo que ella sea la madre de mis hijos.
+Soñar con tener una familia a su lado me llena el alma. Es tan hermosa, tan dulce, tan cachetona, que no imagino un solo día sin su sonrisa.
+Puedo verme junto a ella, viendo nacer a nuestro hijo, a nuestro pequeño Santiago.
+Amo esta foto porque en ella abraza a nuestro hijo en forma de peluche… pero sé que algún día ese abrazo será real.
+Y lo sé, porque daría todo por cumplir ese sueño: tener una familia con ella, y hacer de ese amor algo eterno.</p>
+      </div>
+    </div>
+
+    <div class="bloque">
+      <img src="despeinada.jpeg" alt="Imagen 3">
+      <div class="descripcion">
+        <h2>Muak</h2>
+        <p>Esta foto es una de mis favoritas, por cómo sale ella.
+Siempre le he dicho que me encanta cuando está despeinada, porque hay algo en su forma de verse que simplemente me atrae.
+Me fascina el color de su cabello, y más aún saber que ella misma se encarga de cuidarlo mucho.
+Pero lo que más me enamora son sus expresiones, sus facciones, esa manera tan única que tiene de reflejar cómo se siente cada día.
+Cada foto suya tiene algo especial, como si capturara una parte de lo que ella causa en mí.
+Y aunque podría decir que todas sus fotos son mis favoritas, esta en particular tiene algo distinto… algo solo mío.
+Por eso me gusta tanto mirarla, porque siento que es especial, y que de alguna forma, solo yo puedo tenerla así: en mi corazón y en mi galería.</p>
+      </div>
+    </div>
+
+    <div class="bloque">
+      <img src="su primer collage.jpeg" alt="Imagen 4">
+      <div class="descripcion">
+        <h2>Su primer collage</h2>
+        <p>Aún recuerdo la primera vez que hice su collage, este mismo collage.
+Lo hice con la intención de ponerlo de fondo de pantalla en mi celular y también para subirlo, porque ese día ella me envió varias fotos, y sinceramente no podía elegir cuál era mi favorita.
+En todas salía demasiado bonita, y yo pensaba: “si subo esta, también quisiera subir la otra”.
+Así que, para no hacer tanto lío, decidí juntar todas esas fotos hermosas en una sola imagen.
+De esa forma podía tenerlas todas juntas, tanto para compartirlas en Instagram como para verlas cada vez que encendiera mi celular.
+Este collage es un recuerdo muy especial, porque me encanta cuando ella llena mi galería con sus fotos.
+Me hace feliz tener mi galería llena solo de ella.
+Y ese día lo guardo con mucho cariño, porque además de lo linda que estaba, fue un gesto precioso de su parte.</p>
+      </div>
+    </div>
+
+    <div class="bloque">
+      <img src="dedito.jpeg" alt="Imagen 5">
+      <div class="descripcion">
+        <h2>Su loca forma de ser</h2>
+        <p>Esta foto es muy reciente, pero quise ponerla aquí porque no quiero incluir solo fotos antiguas, sino también momentos actuales, como este.
+Esta imagen es especial porque yo mismo la tomé; en realidad era parte de un video que grabábamos juntos, pero decidí capturar ese instante porque, para mí, cada gesto suyo,incluso los más simples , forma parte de quién es ella.
+Y eso es precisamente lo que la hace tan única.
+Cuando la subí a Instagram, lo hice con la canción Loco por Tu forma de ser, porque realmente estoy loco por ella: por su forma de ser, por su locura, por cómo responde, cómo actúa, cómo vive.
+Estoy enamorado de todo lo que es, profundamente.
+Esa foto, más que una imagen, es un reflejo de lo que siento: de lo mucho que me gusta su esencia, su energía y cada parte de su personalidad.
+Y sí, Gabriella, la canción tenía razón… estoy loco de tu forma de ser. Siempre lo estuve, y siempre lo estaré.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
